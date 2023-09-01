@@ -1,7 +1,7 @@
 # Plugin for Dokuwiki #
 
 ## Installation ##
-Copy the folder urlcopy to your plugin folder /lib/plugins/
+Copy the folder urlcopy to your plugin folder `/lib/plugins/`
 
 ## Usage ##
 Click the Moodle Button in the Page Tools section, to get the URL of the current page copied to the clipboard.
