@@ -1,4 +1,4 @@
-#Plugin for Dokuwiki #
+# Plugin for Dokuwiki #
 
 ## Installation ##
 Copy the folder urlcopy to your plugin folder /lib/plugins/
