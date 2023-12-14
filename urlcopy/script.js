@@ -23,10 +23,13 @@ jQuery(function () {
 
     function copyModifiedLink() {
         let templateString = '<a class="embededWiki" href="XXX">XXX</a>';
-
-        // Replace all occurrences of 'XXX' with window.location.href
-        let modifiedTemplate = templateString.replace(/XXX/g, window.location.href);
-
+    
+        // Get the current URL and remove the jumpmark part
+        let currentUrl = window.location.href.split('#')[0];
+    
+        // Replace all occurrences of 'XXX' with the modified URL
+        let modifiedTemplate = templateString.replace(/XXX/g, currentUrl);
+    
         // Copy to clipboard using the Clipboard API
         navigator.clipboard.writeText(modifiedTemplate).then(function () {
             displayFadeOutMessage('Link kopiert!', 2000);
