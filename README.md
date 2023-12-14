@@ -16,3 +16,5 @@ The url will be modified to be used with the Moodle import Plugin written by @gh
 ## Changes ##
 * 2023-09-01
   * Initial release
+* 2023-12-14
+  * Remove `#Anker` in `window.location.href`
