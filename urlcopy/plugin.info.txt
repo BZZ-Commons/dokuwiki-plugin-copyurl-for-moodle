@@ -1,0 +1,7 @@
+base   urlcopy
+author Kevin Maurizi
+email  kevin.maurizi@bzz.ch
+date   2023-12-14
+name   Copy the URLS of the current page to the clipboard
+desc   The plugin is intended to provide an easy way to copy an HTML hyperlink to the current wiki page by removing the anker and adding a class attribute with the value "embededWiki".iki”
+url    https://www.dokuwiki.org/plugin:copyurl
