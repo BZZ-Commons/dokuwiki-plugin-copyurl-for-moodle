@@ -14,11 +14,14 @@ class action_plugin_urlcopy extends DokuWiki_Action_Plugin {
      /**
      * Hook for MENU_ITEMS_ASSEMBLY event.
      *
-     * Adds 'Moodle Copy Button' button to DokuWiki's PageMenu.
+     * Adds 'Moodle Copy Button' button to DokuWiki's PageMenu only (Tools Panel).
      *
      * @param Doku_Event $event
      */
     public function addLinkButton(Doku_Event $event) {
-        array_splice($event->data['items'], -1, 0, array(new LinkButton('Copy Moodle Link')));
+        // Only add the button to the page menu (Tools Panel)
+        if ($event->data['view'] === 'page') {
+            array_splice($event->data['items'], -1, 0, array(new LinkButton('Copy Moodle Link')));
+        }
     }
 }
